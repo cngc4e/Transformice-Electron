@@ -122,7 +122,7 @@ async function startServer(instance_lock: Boolean) {
 
     /* All ready! */
     readyHandler.afterReady((httpUrl) => {
-        let gameId: TeGames = TeGames.TRANSFORMICE;
+        let gameId: TeGames = TeGames.DEADMAZE;
 
         let id;
         if (id = argp.getFlag("game-id")) {

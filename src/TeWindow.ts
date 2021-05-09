@@ -52,6 +52,10 @@ export abstract class TeWindow {
             }
         });
 
+        bwin.on("resize", () => {
+            console.log("Resize:", bwin.getContentSize());
+        });
+
         bwin.setMenu(Menu.buildFromTemplate([
             {
                 label: 'Zoom In',
